@@ -1,15 +1,19 @@
 import React from 'react'
 import { FcCheckmark } from "react-icons/fc";
 import Button from 'react-bootstrap/Button';
-import Imgs from './imgs/photo_2024-12-06_22-36-00.jpg'
+import Figma from './imgs/top-img-mobile.jpg'
+import Figma11 from './imgs/figma11.jpg'
+import illustrat22 from './imgs/illustrat22.jpg'
+import Ps from './imgs/ps33.jpg'
+import Bra from './imgs/bra44.jpg'
 
 function Section() {
   return (
     <div>
-      <div className=' gap-[50px] mb-[100px]'>
-        <div className='pt-[100px] pl-[300px] pb-[50px] w-[900px] '>
-        <Button variant="outline-secondary">Secondary</Button>
-            <h1 className='mt-[50px] text-7xl mb-[60px]'>
+      <div className=' gap-[0px] mb-[100px] flex'>
+        <div className='pt-[100px] pl-[200px] pb-[50px] w-[900px]  bg-[#F1F2F6]'>
+        <Button variant="outline-secondary">Курс-профессия</Button>
+            <h1 className='mt-[50px] text-7xl mb-[60px] text-[#black]'>
             Grafik dizayner 
              kasbi
             </h1>
@@ -23,8 +27,26 @@ function Section() {
             frilanser sifatida buyurtmalarini qabul qilish uchun zarur ko'nikma va bilimlarga ega bo'lasiz.
             </p>
 
-            <div>
-                <img className='mb-[50px]' src={Imgs} alt="" />
+            <div className='flex gap-[30px] mb-[30px]'>
+                <div className='flex gap[2  0px]'>
+                    <img className='w-[30px]' src={Figma11} alt="" />
+                    <h5>Figma</h5>
+                </div>
+
+                <div className='flex gap[10px]'>
+                    <img className='w-[30px]' src={illustrat22} alt="" />
+                    <h5>Illustrator</h5>
+                </div>
+
+                <div className='flex gap[10px]'>
+                    <img className='w-[30px]' src={Ps} alt="" />
+                    <h5>Photoshop</h5>
+                </div>
+
+                <div className='flex gap[10px]'>
+                    <img className='w-[30px]' src={Bra} alt="" />
+                    <h5>Blender</h5>
+                </div>
             </div>
 
             <div>
@@ -56,7 +78,10 @@ function Section() {
                
             </div>
         </div>
-
+         
+         <div>
+            <img className='w-[900px] h-[1100px]' src={Figma} alt="" />
+         </div>
       </div>
     </div>
   )

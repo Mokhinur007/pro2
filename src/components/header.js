@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 function Header() {
   return (
     <div>
-      <header className='shadow-2xl'>
+      <header className='shadow-2xl z-10 relative'>
         <nav className='flex p-[18px] bg-[#EDEDED] pl-[570px] gap-[70px] text-[17px]'>
           <div>
             <ul className='flex gap-[20px]'>
